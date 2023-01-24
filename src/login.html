@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta
@@ -14,9 +14,39 @@
         rel="stylesheet"
         href="/dist/output.css"
     >
-    <title>Hello world!</title>
+    <title>Dashboard skeleton - login</title>
 </head>
-<body class="bg-red-100">
-    Hello world!
+<body class="bg-gray-200">
+    <div class="flex w-screen h-screen">
+        <div class="bg-white w-[450px] p-12">
+            <img
+                src="./assets/images/logo.svg"
+                alt=""
+            >
+
+            <div class="mt-14 mb-4">
+                <h1 class="text-2xl font-bold">Acesse a sua conta</h1>
+            </div>
+
+            <div class="flex space-x-1.5">
+                <button class="w-[125px] h-14 flex items-center text-sm font-medium text-gray-700 border border-gray-300 rounded-lg px-4 py-2">
+                    <img src="./assets/images/facebook-logo.svg" class="mr-2">
+                    Facebook
+                </button>
+
+                <button class="w-[125px] h-14 flex items-center text-sm font-medium text-gray-700 border border-gray-300 rounded-lg px-4 py-2">
+                    <img src="./assets/images/google-logo.svg" class="mr-2">
+                    Google
+                </button>
+            </div>
+
+            <div class="relative flex items-center justify-center my-6">
+                <div class="absolute bg-gray-300 h-px inset-x-0"></div>
+                <div class="relative text-sm font-medium text-gray-500 bg-white px-2">ou continue com seu e-mail</div>
+            </div>
+            coluna 1
+        </div>
+        <div>coluna 2</div>
+    </div>
 </body>
 </html>
