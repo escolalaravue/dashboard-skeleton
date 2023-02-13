@@ -48,7 +48,7 @@
                     <path d="M20.9372 30C19.5894 30 18.3166 29.6985 17.1665 29.1713C19.2991 27.0728 20.6248 24.1579 20.6248 20.9374C20.6248 17.7173 19.2992 14.8024 17.1665 12.7039C18.3163 12.1766 19.5894 11.8751 20.9372 11.8751C25.9423 11.8751 29.9998 15.9326 29.9998 20.9374C29.9998 25.9425 25.9423 30 20.9372 30Z" fill="currentColor"/>
                 </svg>
 
-                <ul class="ml-6 flex items-center space-x-2">
+                <ul class="hidden ml-6 lg:flex items-center space-x-2">
                     <li>
                         <a href="" class="flex items-center px-3 py-2 text-sm rounded-md bg-sky-600/20 text-sky-800 dark:text-sky-500 font-medium">Home</a>
                     </li>
@@ -74,7 +74,7 @@
                 </ul>
             </div>
 
-            <div class="flex items-center">
+            <div class="hidden lg:flex items-center">
                 <button class="flex items-center space-x-2 mr-4">
                     <img src="./assets/images/icon-search.svg">
                     <div class="text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 font-medium">Pesquisar</div>
@@ -105,13 +105,28 @@
                     >
                 </div>
             </div>
+
+            <div class="lg:hidden flex items-center space-x-5">
+                <button>
+                    <svg class="text-gray-400" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M13.0006 6.50032C13.0006 7.93476 12.535 9.25983 11.7506 10.3349L15.707 14.2944C16.0977 14.6851 16.0977 15.3195 15.707 15.7101C15.3164 16.1008 14.682 16.1008 14.2913 15.7101L10.3349 11.7506C9.25983 12.5381 7.93476 13.0006 6.50032 13.0006C2.90952 13.0006 0 10.0911 0 6.50032C0 2.90952 2.90952 0 6.50032 0C10.0911 0 13.0006 2.90952 13.0006 6.50032ZM6.50032 11.0005C8.98481 11.0005 11.0005 8.98481 11.0005 6.50032C11.0005 4.01582 8.98481 2.0001 6.50032 2.0001C4.01582 2.0001 2.0001 4.01582 2.0001 6.50032C2.0001 8.98481 4.01582 11.0005 6.50032 11.0005Z" fill="currentColor"/>
+                    </svg>
+                </button>
+                <button>
+                    <svg class="text-gray-800 dark:text-gray-100" width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0 1.28571C0 0.574554 0.574554 0 1.28571 0H16.7143C17.4254 0 18 0.574554 18 1.28571C18 1.99688 17.4254 2.57143 16.7143 2.57143H1.28571C0.574554 2.57143 0 1.99688 0 1.28571ZM0 7.71429C0 7.00313 0.574554 6.42857 1.28571 6.42857H16.7143C17.4254 6.42857 18 7.00313 18 7.71429C18 8.42545 17.4254 9 16.7143 9H1.28571C0.574554 9 0 8.42545 0 7.71429ZM18 14.1429C18 14.854 17.4254 15.4286 16.7143 15.4286H1.28571C0.574554 15.4286 0 14.854 0 14.1429C0 13.4317 0.574554 12.8571 1.28571 12.8571H16.7143C17.4254 12.8571 18 13.4317 18 14.1429Z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
 
     <div class="mt-11 w-full max-w-7xl mx-auto">
-        <div class="mb-6 flex items-center justify-between h-12 px-2.5 flex items-center bg-sky-600/20 rounded-lg">
-            <div class="flex items-center space-x-4">
-                <svg class="text-sky-800 dark:text-sky-100 h-5 w-5" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="mb-6 flex flex-col lg:flex-row lg:items-center justify-between lg:h-12 p-4 lg:px-2.5 lg:py-0 bg-sky-600/20 rounded-lg">
+            <div class="flex lg:items-center space-x-4 mb-4 lg:mb-0">
+                <svg class="text-sky-800 dark:text-sky-100 h-5 w-5 shrink-0" width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M13.8889 0H6.11111C5.19097 0 4.44097 0.756945 4.47569 1.67361C4.48264 1.85764 4.48958 2.04167 4.5 2.22222H0.833333C0.371528 2.22222 0 2.59375 0 3.05556C0 6.27083 1.16319 8.50695 2.72569 10.0243C4.26389 11.5208 6.13889 12.2743 7.52083 12.6563C8.33333 12.8819 8.88889 13.559 8.88889 14.2396C8.88889 14.9653 8.29861 15.5556 7.57292 15.5556H6.66667C6.05208 15.5556 5.55556 16.0521 5.55556 16.6667C5.55556 17.2812 6.05208 17.7778 6.66667 17.7778H13.3333C13.9479 17.7778 14.4444 17.2812 14.4444 16.6667C14.4444 16.0521 13.9479 15.5556 13.3333 15.5556H12.4271C11.7014 15.5556 11.1111 14.9653 11.1111 14.2396C11.1111 13.559 11.6632 12.8785 12.4792 12.6563C13.8646 12.2743 15.7396 11.5208 17.2778 10.0243C18.8368 8.50695 20 6.27083 20 3.05556C20 2.59375 19.6285 2.22222 19.1667 2.22222H15.5C15.5104 2.04167 15.5174 1.86111 15.5243 1.67361C15.559 0.756945 14.809 0 13.8889 0ZM1.69792 3.88889H4.62847C4.94444 7.01736 5.64236 9.10764 6.43056 10.5069C5.56597 10.125 4.66667 9.58681 3.88889 8.82986C2.77778 7.75 1.875 6.19097 1.70139 3.88889H1.69792ZM16.1146 8.82986C15.3368 9.58681 14.4375 10.125 13.5729 10.5069C14.3611 9.10764 15.059 7.01736 15.375 3.88889H18.3056C18.1285 6.19097 17.2257 7.75 16.1181 8.82986H16.1146Z" fill="currentColor"/>
                 </svg>
@@ -121,9 +136,9 @@
                 </div>
             </div>
 
-            <div class="flex items-center space-x-3">
-                <a href="" class="text-sm text-sky-800 font-medium dark:text-sky-100">Agora não</a>
-                <button class="text-sm font-medium text-gray-50 dark:text-sky-800 bg-sky-500 rounded-md px-3 py-2">Experimentar</button>
+            <div class="flex items-center ml-9">
+                <button class="lg:order-2 mr-3 lg:mr-0 lg:ml-3 text-sm font-medium text-gray-50 dark:text-sky-800 bg-sky-500 rounded-md px-3 py-2">Experimentar</button>
+                <a href="" class="lg:order-1 text-sm text-sky-800 font-medium dark:text-sky-100">Agora não</a>
             </div>
         </div>
 
