@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt" class="dark">
+<html lang="pt" class="">
 <head>
     <meta charset="UTF-8">
     <meta
@@ -12,11 +12,17 @@
     >
     <link
         rel="stylesheet"
-        href="/dist/output.css"
+        href="/assets/css/style.css"
     >
     <title>Dashboard skeleton - Recuperar senha</title>
+    <script src="/assets/js/darkmode-check.js"></script>
 </head>
 <body>
+    <button id="theme-toggle" class="absolute right-3 top-2 flex items-center justify-center rounded-lg bg-gray-900 dark:bg-gray-100 size-8">
+      <img id="theme-toggle-dark-icon" src="/assets/images/icon-sun.svg" alt="" class="hidden size-5">
+      <img id="theme-toggle-light-icon" src="/assets/images/icon-moon.svg" alt="" class="hidden size-5">
+    </button>
+
     <div class="flex items-center justify-center bg-gray-100 dark:bg-gray-900 w-screen h-screen">
         <div class="w-full max-w-lg">
             <div class="text-center">
@@ -43,17 +49,18 @@
                     </div>
 
                     <div>
-                        <button class="w-full h-12 text-gray-50 text-sm font-medium bg-sky-500 hover:bg-sky-600 px-3 py-2 rounded-md">
+                        <a href="recurperar-senha-pin.html" class="flex items-center justify-center w-full h-12 text-gray-50 text-sm font-medium bg-sky-500 hover:bg-sky-600 px-3 py-2 rounded-md">
                             Enviar código
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="text-center">
-                <a href="" class="text-xs text-gray-700 dark:text-gray-300 font-medium">Voltar para login</a>
+                <a href="index.html" class="text-xs text-gray-700 dark:text-gray-300 font-medium">Voltar para login</a>
             </div>
         </div>
     </div>
+    <script src="/assets/js/darkmode-control.js"></script>
 </body>
 </html>
